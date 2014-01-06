@@ -8,11 +8,21 @@
 		<%= simple_form_for @pic do|f| %>
 			<%= f.input :lesson, label: 'Lesson #:' %>
 			<br />
-			<%= f.input :emotion, label: 'How did you feel?' %>
+
+			<%= f.input :emotion, label: 'How did you feel?', placeholder: "Happy, Stoked, Excited, Super Duper, etc." %>
 			<br />
-			<%= f.input :learned, label: 'What did you learn?', placeholder: "Happy, Stoked, Excited, Super Duper, etc." %>
+
+			<%= f.input :learned, label: 'What did you learn?', placeholder: "HTML, CSS3, Rails, Ruby, Github, how to jump higher, etc." %>
 			<br />
-			<%= f.button :submit, 'Submit!', :class => 'btn-large btn btn-info', placeholder: "HTML, CSS3, Rails, Ruby, Github, how to jump higher, etc." %>
+
+			<%= f.input :picture, label: "Upload a pretty picture"%>
+			<br />
+
+			<%= f.button :submit, 'Submit!', :class => 'btn-large btn btn-info' %>
+			
+
+			
+			
 		<% end %>
 	</h2>
 </div>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140105003631) do
+ActiveRecord::Schema.define(version: 20140106000650) do
 
   create_table "pics", force: true do |t|
     t.integer  "lesson"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20140105003631) do
     t.text     "learned"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "picture"
   end
 
 end
